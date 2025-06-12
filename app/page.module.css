@@ -1,0 +1,46 @@
+
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0rem;
+  min-height: 80vh;
+
+}
+.header {
+  
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.logo a {
+  font-family: 'Segoe Script', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2979ff;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #2979ff;
+}
+
+

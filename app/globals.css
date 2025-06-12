@@ -1,0 +1,71 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%; /* Ensure the height is 100% */
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));  /* Text color */
+  background: linear-gradient(
+    to bottom,
+    rgba(116, 185, 242, 0.8),  /* Light background with slight transparency */
+    rgb(77, 92, 95)  /* Solid light color at the bottom */
+  );
+  overflow-y: auto;  /* Ensure vertical scroll */
+  font-family: sans-serif;  /* Ensure consistent font */
+}
+
+
+/* Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo Styles */
+.logo a {
+  font-family: 'Segoe Script', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2979ff;
+  text-decoration: none;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #2979ff;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
