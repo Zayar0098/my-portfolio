@@ -20,7 +20,7 @@ const Strengths = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div id = "strenghts" className={styles.container}>
       <h1 className={styles.title}>My Strengths</h1>
       <div className={styles.grid}>
         {strengths.map((strength, index) => (
