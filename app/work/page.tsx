@@ -11,14 +11,14 @@ export default function WorkPage() {
       <ul className={styles.workList}>
         <li className={styles.workItem}>
           <h3>作品名 1</h3>
-          <p>Next.js を使ったポートフォリオサイト</p>
-          <Link href="https://github.com/username/project1" className={styles.link}>
+          <p>HTML/CSS を使って作ったサイト</p>
+          <Link href="https://my-project-lq8x.vercel.app/index.html" className={styles.link}>
             GitHub リポジトリはこちら
           </Link>
         </li>
         <li className={styles.workItem}>
           <h3>作品名 2</h3>
-          <p>React + Firebase で作った TODO アプリ</p>
+          <p>ポートフォリオサイト</p>
           <Link href="https://github.com/username/project2" className={styles.link}>
             GitHub リポジトリはこちら
           </Link>

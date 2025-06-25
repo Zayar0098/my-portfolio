@@ -1,6 +1,10 @@
 import styles from "./page.module.css";
+import Image from "next/image";
+import { getskillsList } from "../_libs/microcms";
 
-export default function SkillPage() {
+export default async function SkillPage() {
+  const data = await getskillsList();
+  
   return (
     <main id="skill" className={styles.container}>
       <h2 className={styles.heading}>Skill</h2>
@@ -9,11 +13,31 @@ export default function SkillPage() {
         「半分ぐらいしか理解していないけど…」というものでも積極的に書き、学習のモチベーションに変えましょう。
       </p>
       <ul className={styles.skillList}>
-    <li className={styles.skillCard}>HTML / CSS</li>
-  <li className={styles.skillCard}>JavaScript (ES6+)</li>
-  <li className={styles.skillCard}>TypeScript</li>
-  <li className={styles.skillCard}>React / Next.js</li>
-  <li className={styles.skillCard}>Node.js / Express（現在学習中）</li>
+        {data.contents.map((skills)=>(
+          <li key = {skills.id} className={styles.skillCard}>
+            <Image 
+            src={skills.logo.url}
+            alt=""
+            width={30}
+            height={30}
+            className={styles.image}/>
+            <h4>{skills.logoname}</h4>
+            <p>{skills.skilldescription}</p>
+          </li>
+        
+        ))}
+{/* 
+    <li className={styles.skillCard}>
+      <Image
+      alt="htmllogo"
+      src = "images/html.svg"
+      width={30}
+      height={30}
+      />
+      <h4>HTML</h4>
+      <p>ウェブサイトの基本構造を作り、フォームや画像、動画を追加できます。</p>
+      </li>   */}
+
 </ul>
 
     </main>
