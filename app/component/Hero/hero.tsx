@@ -19,13 +19,13 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
-      <Image
+      {/* <Image
         src="/images/main.jpg"
         alt="Main"
         width={1200}
         height={600}
         className={styles.heroImage}
-      />
+      /> */}
 
       <div className={styles.heroContent}>
         <div className={styles.textBlock}>
