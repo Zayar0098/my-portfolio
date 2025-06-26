@@ -14,7 +14,7 @@ export default function ProfilePage() {
           className={styles.profileImage}
         />
         <div className={styles.profileText}>
-          <p><strong>名前：</strong>Zayar Aung</p>
+          <p><strong>名前：</strong>Zayar Aung (ゼィヤー　と読んでください)</p>
           <p><strong>年齢：</strong>24歳</p>
           <p>
             専門学校沖縄ビジネス外語学院 Web プログラミングコースを専攻し、現在はエンジニアを目指して勉強中。
