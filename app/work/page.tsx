@@ -10,19 +10,13 @@ export default function WorkPage() {
       </p>
       <ul className={styles.workList}>
         <li className={styles.workItem}>
-          <h3>作品名 1</h3>
+          <h3>作品名 </h3>
           <p>HTML/CSS を使って作ったサイト</p>
           <Link href="https://my-project-lq8x.vercel.app/index.html" className={styles.link}>
             GitHub リポジトリはこちら
           </Link>
         </li>
-        <li className={styles.workItem}>
-          <h3>作品名 2</h3>
-          <p>ポートフォリオサイト</p>
-          <Link href="https://github.com/username/project2" className={styles.link}>
-            GitHub リポジトリはこちら
-          </Link>
-        </li>
+       
         {/* 必要に応じてリストを追加 */}
       </ul>
     </main>
